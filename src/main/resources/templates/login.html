@@ -1,19 +1,32 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <title>Login page</title>
+    
     <link th:href="@{/public/style.css}" rel="stylesheet" />
 </head>
 <body>
 <div id="container">
     <h2>Login page</h2>
+   
     <form th:action="@{/login.html}" method="post">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" autofocus="autofocus" />
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" />
-        <input id="submit" type="submit" value="Log in" />
-    </form>
+	  <div class="form-group mb-2">
+	    <label for="username">Username</label>
+	    <input type="text" class="form-control-plaintext" id="username" name="username" autofocus="autofocus" />
+	  </div>
+	  <div class="form-group mx-sm-3 mb-2">
+	    <label for="password">Password</label>
+	    <input type="password" class="form-control" id="password" name="password" />
+	  </div>
+	  <button type="submit" class="btn btn-primary mb-2">Log In</button>
+	</form>
     <p th:if="${loginError}" class="error">Wrong user or password</p>
 </div>
 </body>
