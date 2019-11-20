@@ -15,7 +15,7 @@ public class WebController {
     @RequestMapping("/")
     @ResponseBody
     public String index() {
-        return "home.html";
+        return "You have successfully logged in!";
     }
 
     // Login form
