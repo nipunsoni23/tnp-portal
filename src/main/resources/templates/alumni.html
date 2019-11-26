@@ -1,27 +1,21 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-
-<head>
-	<!-- Required meta tags -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Login page</title>
-    <link th:href="@{index.css}" rel="stylesheet" />
-    <style>
-    html {
+    <title>Alumni</title>
+    <style>   	
+    	html {
 		  position: relative;
 		  min-height: 100%;
 		}
 		body {
-		  margin: 0;
 		  margin-bottom: 5em; /* Margin bottom by footer height */
-		  padding: 0;
-          font-family: sans-serif;
-          color: rgba(0, 0, 0, 0.842)
 		}
 		footer{
     		background-color: rgb(52, 58, 64);
@@ -33,77 +27,12 @@
 			height: 5em; /* Set the fixed height of the footer here */
 			line-height: 5em; /* Vertically center the text there */
     	}
-        
-        /* * {
-            border: 2px black solid;
-        } */
-
-        #container {
-
-            padding: 5px;
-            border: 2px solid black;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #888;
-            width: 60%;
-        }
-
-        .welcome h1 {
-            font-weight: 50px;
-            border-bottom: 2px solid black;
-
-        }
-
-        #login-form,
-            {
-            padding: 5px;
-            margin: 10px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        #input-form input {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        #submit {
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            border: none;
-        }
-
-        #submit:hover {
-            opacity: 0.8;
-        }
-
-        @media screen and (max-width: 300px) {
-            span.psw {
-                display: block;
-                float: none;
-            }
-        }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
 
-	<!-- Navbar-->
+  	<!-- Navbar-->
   	<section>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	  <a class="navbar-brand mx-5" href="#">TNP Portal IGDTUW</a>
@@ -115,7 +44,7 @@
 	      <li class="nav-itemmx-2">
 	        <a class="nav-link" href="home.html">Home</a>
 	      </li>
-	      <li class="nav-item dropdown mx-2">
+	      <li class="nav-item dropdown mx-2 active">
 	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	          Why IGDTUW
 	        </a>
@@ -123,7 +52,7 @@
 	          <a class="dropdown-item" href="history.html">History</a>
 	          <a class="dropdown-item" href="students.html">Students</a>
 	          <a class="dropdown-item" href="faculty&research.html">Faculty & Research</a>
-	          <a class="dropdown-item" href="alumni.html">Alumni</a>
+	          <a class="dropdown-item active" href="alumni.html">Alumni</a>
 	          <a class="dropdown-item" href="courses-offered.html">Courses Offered</a>
 	        </div>
 	      </li>
@@ -136,7 +65,7 @@
 	          <a class="dropdown-item" href="procedure.html">Procedure</a>
 	        </div>
 	      </li>
-	      <li class="nav-item mx-2 active">
+	      <li class="nav-item mx-2">
 	        <a class="nav-link" href="login.html">Login</a>
 	      </li>
 	      <li class="nav-item mx-2">
@@ -147,43 +76,29 @@
 	</nav>
 	</section>
 
-    <div id="container">
-        <div class="welcome">
-            <h3><strong>IGDTUW TNP Cell</strong></h3>
-        </div>
-        <div id=login>
-            <h4><strong> Login </strong></h4>
-        </div>
-        <div id=login-form>
-            <form id="input-form" th:action="@{/login.html}" method="post">
-                <div class="textbox">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" autofocus="autofocus" />
-                </div>
-                <div class="textbox">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" />
-                </div>
-                <input id="submit" type="submit" value="Log in" />
+	<!-- Policy -->
+	<section>
+		<div class="card mb-3"  style="width:80%; margin:2em auto;">
+		  <div class="card-body">
+		    <h3 class="card-title">Alumni</h3>
+		    <p class="card-text">
+		    	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+		    </p>
+		  </div>
+		</div>
+	</section>
 
-            </form>
-            <p th:if="${loginError}" class="error">Wrong user or password</p>
-        </div>
-
-    </div>
-    
-    <!--Footer-->
+	
+	<!--Footer-->
 	<footer>
 		<span>Copyright &copy; 2019</span> | 
 		<span>Created by Tripti Saini, Nipun Soni, Harshita and Priyanka<span>
 	</footer>
-	
-	 <!-- Optional JavaScript -->
+
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	
-</body>
-
+  </body>
 </html>
