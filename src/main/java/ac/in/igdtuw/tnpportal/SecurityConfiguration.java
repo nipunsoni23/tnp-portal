@@ -30,7 +30,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .antMatchers("/faculty&research.html").permitAll()
             .antMatchers("/history.html").permitAll()
             .antMatchers("/home.html").permitAll()
-            .antMatchers("/policy.html").permitAll()
+            .antMatchers("/register.html").permitAll()
             .antMatchers("/procedure.html").permitAll()
             .antMatchers("/students.html").permitAll()
             .anyRequest().authenticated()

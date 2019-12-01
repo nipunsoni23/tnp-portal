@@ -68,9 +68,9 @@ public class WebController {
         return "history.html";
     }
     
-    @RequestMapping("/policy.html")
+    @RequestMapping("/register.html")
     public String policy() {
-        return "policy.html";
+        return "register.html";
     }
     
     @RequestMapping("/procedure.html")

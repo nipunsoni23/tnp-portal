@@ -7,10 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-	<title>History</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<title>Register</title>
 	<style>
 		html {
 			position: relative;
@@ -52,26 +50,26 @@
 					<li class="nav-itemmx-2">
 						<a class="nav-link" href="home.html">Home</a>
 					</li>
-					<li class="nav-item dropdown mx-2 active">
+					<li class="nav-item dropdown mx-2">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
 							aria-haspopup="true" aria-expanded="false">
 							Why IGDTUW
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item active" href="history.html">History</a>
+							<a class="dropdown-item" href="history.html">History</a>
 							<a class="dropdown-item" href="students.html">Students</a>
 							<a class="dropdown-item" href="faculty&research.html">Faculty & Research</a>
 							<a class="dropdown-item" href="alumni.html">Alumni</a>
 							<a class="dropdown-item" href="courses-offered.html">Courses Offered</a>
 						</div>
 					</li>
-					<li class="nav-item dropdown mx-2">
+					<li class="nav-item dropdown mx-2 active">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
 							aria-haspopup="true" aria-expanded="false">
 							Placement
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="register.html">Register</a>
+							<a class="dropdown-item active" href="register.html">Register</a>
 							<a class="dropdown-item" href="procedure.html">Procedure</a>
 						</div>
 					</li>
@@ -86,23 +84,41 @@
 		</nav>
 	</section>
 
-	<!-- Register -->
+	<!-- content -->
 	<section>
 		<div class="card mb-3" style="width:80%; margin:2em auto;">
 			<div class="card-body">
-				<h3 class="card-title">History</h3>
-				<p class="card-text">
-					<p>
-						Indira Gandhi Institute of Technology was established by Department of Training and Technical Education,
-						Govt. of Delhi, in 1998 as the first woman Engineering College in India. It was the first institute to
-						become a constituent college of Guru Gobind Singh Indraprastha University. From May, 2013 IGIT has
-						acquired the status of the first Women's technical University under Govt. of Delhi and rechristened as
-						Indira Gandhi Delhi Technical University for Women.
-					</p>
-
-				</p>
+				<form>
+					<div class="form-group">
+						<label for="">Company Name</label>
+						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlInput1">Company Name</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlSelect1">Example select</label>
+						<select class="form-control" id="exampleFormControlSelect1">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlSelect2">Example multiple select</label>
+						<select multiple class="form-control" id="exampleFormControlSelect2">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+				</form>
 			</div>
-		</div>
 	</section>
 
 
