@@ -13,9 +13,8 @@ import org.springframework.web.bind.support.SessionStatus;
 public class WebController {
     
     @RequestMapping("/")
-    @ResponseBody
     public String index() {
-        return "You have successfully logged in!";
+    	return "redirect:/dashboard.html";
     }
 
     // Login form
@@ -77,9 +76,35 @@ public class WebController {
     public String procedure() {
         return "procedure.html";
     }
-    
+
     @RequestMapping("/students.html")
     public String studentLife() {
         return "students.html";
     }
+    
+    @RequestMapping("/dashboard.html")
+    public String dashboard() {
+        return "dashboard.html";
+    }
+    
+    @RequestMapping("/calendar.html")
+    public String calendar() {
+        return "calendar.html";
+    }
+    
+    @RequestMapping("/notifications.html")
+    public String notifications() {
+        return "notifications.html";
+    }
+    
+    @RequestMapping("/results.html")
+    public String results() {
+        return "results.html";
+    }
+    
+    @RequestMapping("/user.html")
+    public String user() {
+        return "user.html";
+    }
+    
 }
