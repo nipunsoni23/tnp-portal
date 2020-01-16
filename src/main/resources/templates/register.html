@@ -88,57 +88,175 @@
 	<section>
 		<div class="card mb-3" style="width:80%; margin:2em auto;">
 			<div class="card-body">
-				<form>
+				<form id="jaf">
 					<div class="form-group">
 						<label for="">Company Name</label>
-						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Company Name">
 					</div>
 					<div class="form-group">
-						<label for="exampleFormControlInput1">Company Name</label>
-						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">
+						<label for="">Name of the Company Representative</label>
+						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
 					</div>
 					<div class="form-group">
-						<label for="exampleFormControlSelect1">Example select</label>
-						<select class="form-control" id="exampleFormControlSelect1">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-						</select>
+						<label for="">Contact Number</label>
+						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="+91-">
 					</div>
 					<div class="form-group">
-						<label for="exampleFormControlSelect2">Example multiple select</label>
-						<select multiple class="form-control" id="exampleFormControlSelect2">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-						</select>
+						<label for="">Email id</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="@company.com">
 					</div>
+					<div class="form-group">
+						<label for="exampleFormControlInput1">Job Title</label>
+						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="e.g. Software Engineer">
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlInput1">Profile</label><br>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="checkbox" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+							<label class="custom-control-label" for="customRadioInline1">Technical</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="checkbox" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+							<label class="custom-control-label" for="customRadioInline2">Non-Technical</label>
+						</div>
+
+
+					</div>
+					<div class="form-group">
+						<label for="">Type of offer</label><br>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="checkbox" id="offer1" name="customRadioInline1" class="custom-control-input">
+							<label class="custom-control-label" for="offer1">Full Time Employee</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="checkbox" id="offer2" name="customRadioInline1" class="custom-control-input">
+							<label class="custom-control-label" for="offer2">Intern</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="">Job Location</label>
+						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Location(s)">
+					</div>
+					<div class="form-group">
+						<label for="">Target Batch</label>
+						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="eg. 2020,2021">
+					</div>
+					<div class="form-group">
+						<label for="">Target Branches</label><br /><br/>
+						<div>
+
+							<div id="btech">
+								<p>B.Tech.</p>
+								<div class="custom-control custom-radio">
+									<input type="checkbox" id="cse" name="customRadioInline1" class="custom-control-input">
+									<label class="custom-control-label" for="cse">Computer Science Engineering</label>
+								</div>
+								<div class="custom-control custom-radio ">
+									<input type="checkbox" id="it" name="customRadioInline1" class="custom-control-input">
+									<label class="custom-control-label" for="it">Information Technology</label>
+								</div>
+								<div class="custom-control custom-radio ">
+									<input type="checkbox" id="ece" name="customRadioInline1" class="custom-control-input">
+									<label class="custom-control-label" for="ece">Electronics and Communication Engineering</label>
+								</div>
+								<div class="custom-control custom-radio ">
+									<input type="checkbox" id="mech" name="customRadioInline1" class="custom-control-input">
+									<label class="custom-control-label" for="mech">Mechanical Engineering</label>
+								</div>
+
+							</div>
+							<br>
+							<div id="barch">
+								<p>B.Arch.</p>
+								<div class="custom-control custom-radio ">
+									<input type="checkbox" id="arch" name="customRadioInline1" class="custom-control-input">
+									<label class="custom-control-label" for="arch">Architecture and Planning</label>
+
+								</div>
+								<br>
+								<div id="mtech">
+									<p>M.Tech.</p>
+									<div class="custom-control custom-radio">
+										<input type="checkbox" id="mpc" name="customRadioInline1" class="custom-control-input">
+										<label class="custom-control-label" for="mpc">Mobile Pervasive Computing</label>
+									</div>
+									<div class="custom-control custom-radio ">
+										<input type="checkbox" id="ism" name="customRadioInline1" class="custom-control-input">
+										<label class="custom-control-label" for="ism">Information Security Management</label>
+									</div>
+									<div class="custom-control custom-radio ">
+										<input type="checkbox" id="vlsi" name="customRadioInline1" class="custom-control-input">
+										<label class="custom-control-label" for="vlsi">VLSI</label>
+									</div>
+									<div class="custom-control custom-radio ">
+										<input type="checkbox" id="rna" name="customRadioInline1" class="custom-control-input">
+										<label class="custom-control-label" for="rna">Robotics and Automation</label>
+									</div>
+
+								</div>
+								<br>
+								<div id="mca">
+									<p>MCA</p>
+									<div class="custom-control custom-radio ">
+										<input type="checkbox" id="Mca" name="customRadioInline1" class="custom-control-input">
+										<label class="custom-control-label" for="Mca">Masters of Computer Administration</label>
+									</div>
+								</div>
+								<br>
+							</div>
+						</div>
+						</div>
+						<div class="form-group">
+							<label for="">Preferred week/date for visit</label>
+							<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+						</div>
+						<div class="form-group">
+							<label for="">Eligibility Criteria</label>
+							<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+						</div>
+
+						<div class="form-group">
+							<label for="">CTC offered</label>
+							<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+						</div>
+						<div class="form-group">
+							<label for=""> Job Description</label>
+							<div class="custom-file">
+								<input type="file" class="custom-file-input" id="customFile">
+								<label class="custom-file-label" for="customFile">Choose file</label>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="">Remarks</label>
+							<input type="text" class="form-control" id="exampleFormControlFile1">
+						</div>
+						<button class="btn btn-primary btn-block" type="submit">Submit</button>
 				</form>
+
+
 			</div>
+	</div>
 	</section>
+
+	<br>
+
 
 
 	<!--Footer-->
 	<footer>
 		<span>Copyright &copy; 2019</span> |
-		<span>Created by Tripti Saini, Nipun Soni, Harshita and Priyanka<span>
+		<span>Created by Tripti Saini, Nipun Soni, Harshita and Priyanka</span>
 	</footer>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-		crossorigin="anonymous"></script>
+		></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
+		></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-		crossorigin="anonymous"></script>
+		></script>
 </body>
 
 </html>
