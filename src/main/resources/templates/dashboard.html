@@ -20,7 +20,7 @@
 
 <body class="dark-edition">
   <div class="wrapper ">
-    <div class="sidebar" data-color="green" data-background-color="black" data-image="assets/img/sidebar-2.jpg">
+    <div class="sidebar" data-color="azure" data-background-color="black" data-image="assets/img/sidebar-2.jpg">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -140,22 +140,36 @@
         <div class="container-fluid">
           <div class="col">
             <div class="col-xl-12">
-              <div class="card card-chart">
-                <div class="card-header card-header-success">
-                  <div class="ct-chart" id="dailySalesChart"></div>
+            <div th:each="i : ${#numbers.sequence( 0, 5, 1)}">
+			   <div class="card">
+                <div class="card-header card-header-info">
+                  <h4 style="margin:0;">
+                  	Company Name
+                  </h4>
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title">Daily Sales</h4>
+                  <h4 class="card-title">Visit Date: 20 Jan 2020</h4>
                   <p class="card-category">
-                    <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.
+					  <a class="text-info" data-toggle="collapse" href="#moreDetails" role="button" aria-expanded="false" aria-controls="moreDetails">
+					    More details
+					  </a>
+  				  </p>
+				<div class="collapse" id="moreDetails">
+				  <div class="card card-body">
+				    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+				  </div>
+				</div>
                   </p>
+                  <button type="button" class="btn btn-outline-success">Register</button>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
-                    <i class="material-icons">access_time</i> updated 4 minutes ago
+                    <i class="material-icons">access_time</i> Last date to register: 5 Feb 2020
                   </div>
                 </div>
               </div>
+			</div>
+              
             </div>
 
           </div>
