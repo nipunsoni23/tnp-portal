@@ -72,6 +72,16 @@ public class WebController {
         return "register.html";
     }
     
+    @RequestMapping("/photo.html")
+    public String photo() {
+        return "photo.html";
+    }
+    
+    @RequestMapping("/uploadPhoto.html")
+    public String uploadPhoto() {
+        return "uploadPhoto.html";
+    }
+    
     @RequestMapping("/procedure.html")
     public String procedure() {
         return "procedure.html";
